@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+ <head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+ <meta http-equiv="Pragma" content="no-cache">
+ <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+ <meta name="mobile-web-app-capable" content="yes">
+ <!-- Add to homescreen for Safari on iOS -->
+ <meta name="apple-mobile-web-app-capable" content="yes">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <title>New user register</title>
+ <style>
+  body {
+  margin: auto;
+  background: url("sch.jpg") no-repeat center center fixed;  
+  height: 100vh;
+ background-size: cover;
+ background-repeat: no-repeat;
+ -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    /*padding:50px;
+    padding-top:10px;*/
+    text-align:center;
+      width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+  
+  @media screen and (min-width: 1024px){
+      /*
+      .responsive-image{
+          background-image: url('image.jpeg');
+          height: 100vh;
+      }*/
+  }
+  
+  /* Desktop */
+  @media screen and (min-width: 980px) and (max-width: 1024px){
+     /*.responsive-image{
+          background-image: url('image.jpeg');
+          height: 100vh;
+      }*/
+  }
+  
+  /* Tablet */
+  @media screen and (min-width: 760px) and (max-width: 980px){
+      /*.responsive-image{
+          background-image: url('image.jpeg');
+          height: 100vh;
+      }*/
+  }
+  
+  /* Mobile HD */
+  @media screen and (min-width: 350px) and (max-width: 760px){
+      /*.responsive-image{
+          background-image: url('image.jpeg');
+          height: 100vh;
+      }*/
+  }
+  
+  /* Mobile LD */
+  
+  @media screen and (max-width: 320px)and (max-width : 350px){
+      .panel-group{
+          margin-bottom:80px;
+          
+  
+      }
+     /* .responsive-image{
+          background-image: url('image.jpeg');
+          height: 100vh;
+          
+      }*/
+  } 
+.info p {
+  text-align:center;
+  color: #999;
+  text-transform:none;
+  font-weight:600;
+  font-size:15px;
+  margin-top:2px
+}
+
+.info i {
+  color:#F6AA93;
+}
+form h1 {
+  font-size: 18px;
+  background: #F6AA93 none repeat scroll 0% 0%;
+  color: rgb(255, 255, 255);
+  padding: 22px 25px;
+  border-radius: 5px 5px 0px 0px;
+  margin: auto;
+  text-shadow: none; 
+  text-align:left
+}
+
+form {
+  border-radius: 5px;
+  max-width:700px;
+  width:100%;
+  margin: 5% auto;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+p span {
+  color: #F00;
+}
+
+p {
+  margin: 0px;
+  font-weight: 500;
+  line-height: 2;
+  color:#333;
+}
+
+h1 {
+  text-align:center; 
+  color: #666;
+  text-shadow: 1px 1px 0px #FFF;
+  margin:50px 0px 0px 0px
+}
+
+input {
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #eee;
+  margin-bottom: 15px;
+  width: 75%;
+  height: 40px;
+  float: left;
+  padding: 0px 15px;
+}
+
+a {
+  text-decoration:inherit
+}
+
+textarea {
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #EEE;
+  margin: 0;
+  width: 75%;
+  height: 130px; 
+  float: left;
+  padding: 0px 15px;
+}
+
+.form-group {
+  overflow: hidden;
+  clear: both;
+}
+
+.icon-case {
+  width: 35px;
+  float: left;
+  border-radius: 5px 0px 0px 5px;
+  background:#eeeeee;
+  height:42px;
+  position: relative;
+  text-align: center;
+  line-height:40px;
+}
+
+i {
+  color:#555;
+}
+
+.contentform {
+  padding: 40px 30px;
+}
+
+.bouton-contact{
+  background-color: #81BDA4;
+  color: #FFF;
+  text-align: center;
+  width: 100%;
+  border:0;
+  padding: 17px 25px;
+  border-radius: 0px 0px 5px 5px;
+  cursor: pointer;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.leftcontact {
+  width:49.5%; 
+  float:left;
+  border-right: 1px dotted #CCC;
+  box-sizing: border-box;
+  padding: 0px 15px 0px 0px;
+}
+
+.rightcontact {
+  width:49.5%;
+  float:right;
+  box-sizing: border-box;
+  padding: 0px 0px 0px 15px;
+}
+
+.validation {
+  display:none;
+  margin: 0 0 10px;
+  font-weight:400;
+  font-size:13px;
+  color: #DE5959;
+}
+
+#sendmessage {
+  border:1px solid #fff;
+  display:none;
+  text-align:center;
+  margin:10px 0;
+  font-weight:600;
+  margin-bottom:30px;
+  background-color: #EBF6E0;
+  color: #5F9025;
+  border: 1px solid #B3DC82;
+  padding: 13px 40px 13px 18px;
+  border-radius: 3px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.03);
+}
+
+#sendmessage.show,.show  {
+  display:block;
+}
+ </style>
+ 
+ 
+</head>
+ 
+<body>
+    <form>
+          <h1>REGISTERATION</h1>
+          
+      <div class="contentform">
+          <div id="sendmessage"> You have has been registered successfully. Thank you. </div>
+  
+  
+          <div class="leftcontact">
+              <div class="form-group">
+                  <p>Title<span>*</span></p>
+                  <span class="icon-case"><i class="fa fa-male"></i></span>
+                  <input type="text" name="nom" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné."/>
+                  <div class="validation">
+
+                </div>
+          </div> 
+  
+              <div class="form-group">
+              <p>Name <span>*</span></p>
+              <span class="icon-case"><i class="fa fa-user"></i></span>
+                  <input type="text" name="prenom" id="prenom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné."/>
+                  <div class="validation"></div>
+              </div>
+  
+              <div class="form-group">
+              <p>E-mail <span>*</span></p>	
+              <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+                  <input type="email" name="email" id="email" data-rule="email" data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire."/>
+                  <div class="validation"></div>
+              </div>	
+  
+              <div class="form-group">
+              <p>School Name<span>*</span></p>
+              <span class="icon-case"><i class="fa fa-home"></i></span>
+                  <input type="text" name="society" id="society" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Société' doit être renseigné."/>
+                  <div class="validation"></div>
+              </div>
+  
+              <div class="form-group">
+              <p>School Address <span>*</span></p>
+              <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
+                  <input type="text" name="adresse" id="adresse" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné."/>
+                  <div class="validation"></div>
+              </div>
+
+             
+      </div>
+  
+      <div class="rightcontact">	
+  
+              <div class="form-group">
+              <p>LGA<span>*</span></p>
+              <span class="icon-case"><i class="fa fa-building-o"></i></span>
+                  <input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+                  <div class="validation"></div>
+              </div>	
+  
+              <div class="form-group">
+              <p>Phone number <span>*</span></p>	
+              <span class="icon-case"><i class="fa fa-phone"></i></span>
+                  <input type="text" name="phone" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
+                  <div class="validation"></div>
+              </div>
+  
+              <div class="form-group">
+              <p>Position Held <span>*</span></p>
+              <span class="icon-case"><i class="fa fa-info"></i></span>
+                  <input type="text" name="fonction" id="fonction" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Fonction' doit être renseigné."/>
+                  <div class="validation"></div>
+              </div>
+
+              <div class="form-group">
+                    <p>Create Username<span>*</span></p>
+                    <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
+                        <input type="text" name="adresse" id="adresse" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné."/>
+                    <div class="validation"></div>
+               </div>
+
+              <div class="form-group">
+                    <p>Create Password<span>*</span></p>
+                    <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
+                        <input type="text" name="adresse" id="adresse" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné."/>
+                    <div class="validation"></div>
+                </div>
+  
+      </div>
+      </div>
+  <button type="submit" class="bouton-contact"><a href = "login.html">Submit</a></button>
+      
+  </form>	
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+ </html> 
